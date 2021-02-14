@@ -22,6 +22,9 @@ pub mod util;
 
 pub mod prelude;
 
+pub use dict_ru;
+pub use dict_uk;
+
 pub use crate::{
     analyzer::{units::abc::AnalyzerUnit, MorphAnalyzer},
     container::{
