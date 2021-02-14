@@ -38,7 +38,7 @@ where
         let readline = rl.readline("Word to parse: ");
         match readline {
             Ok(line) => {
-                rl.add_history_entry(line.as_ref());
+                rl.add_history_entry(line.to_string());
                 f(line.trim());
             }
             Err(ReadlineError::Interrupted) => {
